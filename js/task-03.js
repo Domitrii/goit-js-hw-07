@@ -2,10 +2,10 @@ const inputName = document.querySelector('#name-input')
 const outputName = document.querySelector('#name-output')
 
 inputName.addEventListener("input", event => {
-let Trimvalue = event.target.value.trim();
+const trimValue = event.target.value.trim();
 
-    if(Trimvalue !== ''){
-        outputName.textContent = Trimvalue;
+    if(trimValue !== ''){
+        outputName.textContent = trimValue;
     } else{
         outputName.textContent= 'Anonymous';
     }

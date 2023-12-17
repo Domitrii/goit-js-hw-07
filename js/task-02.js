@@ -29,7 +29,7 @@ const images = [
 ];
 
 
-const a = document.querySelector(".gallery");
+const box = document.querySelector(".gallery");
 
     const markup = images.map(
         e => `<li><img src="${e.url}" alt="${e.alt}" class="gallery-imgs"></li>`
@@ -37,4 +37,4 @@ const a = document.querySelector(".gallery");
 
 console.log(markup)
 
-a.insertAdjacentHTML('afterbegin', markup)
+box.insertAdjacentHTML('afterbegin', markup)
